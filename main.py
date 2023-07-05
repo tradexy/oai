@@ -1,5 +1,5 @@
 import json
-
+import os
 import quart
 import quart_cors
 from quart import request
@@ -50,7 +50,8 @@ async def openapi_spec():
         return quart.Response(text, mimetype="text/yaml")
 
 def main():
-    app.run(debug=True, host="0.0.0.0", port=5003)
+    port = int(os.environ.get("PORT", 5003))
+    app.run(debug=True, host="0.0.0.0", port=port)
 
 if __name__ == "__main__":
     main()

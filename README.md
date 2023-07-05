@@ -33,6 +33,9 @@ The plugin should now be installed and enabled! You can start with a question li
 ### Code Sandbox
 
 ### Replit
+IMPLEMENTED - on run, issues with .gitignore, but solution below
+IN THE SHELL YOU MUST RUN: python main.py
+SO FI TRIED IMPLEMENTING PERSISTENT STORAGE USING A FILE CALLED todos.json BUT IT IS NOT WORKING
 
 ## Getting help
 
